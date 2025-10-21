@@ -1,0 +1,248 @@
+@charset "UTF-8";
+
+/* 폰트  Playfair Display  "Playfair Display", serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+/* 폰트 Rozha One  "Rozha One", serif*/
+@import url('https://fonts.googleapis.com/css2?family=Rozha+One&display=swap');
+
+/* 폰트 프리텐다드 Pretendard*/
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+/* ----------------------------------------------------- */
+
+/* 기본설정 */
+
+
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+    color: #424242;
+}
+
+img {
+    display: block;
+}
+
+body {
+    -ms-overflow-style: none;
+    font-family: 'Pretendard';
+    line-height: 1.5;
+    min-width: 1450px;
+    color: #424242;
+    background-color: #F2EEE4;
+
+}
+
+.allwrap {
+    position: relative;
+    scroll-snap-type: y mandatory;
+    overflow: auto;
+    height: 100vh;
+    scroll-behavior: smooth;
+}
+
+.allwrap>div {
+    scroll-snap-align: center;
+}
+
+/* _____________header______________________________*/
+
+.header .left_menu{
+    background: url(../image/side_menu_back.png);
+    height: 100vh;
+    width: 230px;
+    position: fixed;
+    background-color: #F2EEE4;
+    left: 0;
+    top: 0;
+}
+
+.header .left_menu .wrap{
+    padding: 185px 30px;
+}
+
+.header .left_menu .wrap .left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 45px;
+}
+
+.header .left_menu .wrap .left li a img{
+    width: 100%;
+}
+
+.header .left_menu .wrap .left li a{
+    font-size: 30px;
+    color: #fff;
+    font-weight: bold;
+    filter: drop-shadow(1px 1px 1px rgba(204, 204, 204, 0.515));
+}
+
+.header .left_menu .wrap .left li a:hover{
+    color: #424242;
+}
+
+.header .left_menu .wrap .left li:nth-child(2) a{
+    color: #424242;
+}
+
+/*________________________________________*/
+
+/* content1 */
+.content1 img{
+    height: 100vh;
+}
+
+.content1{
+    margin-left: 130px;
+}
+/* ______________________________________ */
+
+/* content2 */
+.content2{
+    height: 100vh;
+}
+
+.content2 .content2_wrap{
+    width: 900px;
+    margin: 0 auto;
+}
+
+.content2 .content2_wrap ul{
+    display: flex;
+    justify-content: space-between;
+    padding-top: calc(50vh - 102px);
+}
+
+.content2 .content2_wrap ul li{
+    width: 405px;
+    color: #8C2F39;
+}
+
+.content2 .content2_wrap ul li:nth-child(2){
+    width: 2px;
+}
+
+.content2 .content2_wrap ul li span{
+    font-size: 16px;
+}
+
+.content2 .content2_wrap ul li{
+    font-size: 17px;
+    filter: drop-shadow(1px 1px 1px rgba(204, 204, 204, 0.515));
+}
+/* ____________________________________ */
+
+/* content3 */
+.content3{
+    height: 100vh;
+    background: url(../image/brand_intro_02.png) no-repeat top left;
+}
+/* ________________________________________ */
+
+/* content4 */
+.content4{
+    height: 100vh;
+}
+
+.content4 .content4_wrap{
+    width: 1000px;
+    margin: 0 auto;
+    padding-top: calc(50vh - 272.8px);
+}
+
+.content4 .content4_wrap ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    
+}
+
+.content4 .content4_wrap ul li{
+    filter: drop-shadow(1px 1px 1px rgba(204, 204, 204, 0.515));
+}
+
+.content4 .content4_wrap ul li img{
+    width: 500px;
+}
+
+.content4 .content4_wrap ul li p{
+    margin-top: 20px;
+    width: 490px;
+    color: #8C2F39;
+}
+
+.content4 .content4_wrap ul li:first-child{
+    padding-top: 100px;
+}
+
+
+/* __________________________________________ */
+
+
+/* footer */
+.footer .footer_wrap {
+    background: url(../image/footer_back.png) no-repeat bottom;
+    background-size: inherit;
+    width: 100%;
+    height: 470px;
+    padding-top: 50px;
+    position: relative;
+    z-index: 1;
+    background-color: #F2EEE4;
+}
+
+.footer .footer_wrap .logo {
+    display: flex;
+    justify-content: center;
+    filter: brightness(0);
+}
+
+.footer .footer_wrap .logo a img {
+    width: 200px;
+}
+
+.footer .footer_wrap .bottom {
+    display: flex;
+    justify-content: space-between;
+    width: 1300px;
+    margin: 200px auto 0;
+}
+
+.footer .footer_wrap .bottom li {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.footer .footer_wrap .bottom li a:hover {
+    color: #8C2F39;
+}
+
+.footer .footer_wrap .bottom li ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .footer_wrap .bottom li ul li a img:hover {
+    background-color: #8C2F39;
+    border-radius: 10px;
+}
+
+/* _______________________________ */
